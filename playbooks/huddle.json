@@ -1,0 +1,32 @@
+{
+	"offense": {
+		"alignment": {
+			"qb1":  { "pos": "qb", "depth": 1, "x": -3.0, "y": -5.0 },
+			"lt1":  { "pos": "lt", "depth": 1, "x": 2.8, "y": -3.7 },
+			"lg1":  { "pos": "lg", "depth": 1, "x": 1.4, "y": -3.1 },
+			"c1":   { "pos": "c",  "depth": 1, "x": 0.0,  "y": -3.0 },
+			"rg1":  { "pos": "rg", "depth": 1, "x": -1.4, "y": -3.3 },
+			"rt1":  { "pos": "rt", "depth": 1, "x": -2.9, "y": -3.8 },
+			"sk1":  { "pos": "wr", "depth": 1, "x": -2.8, "y": -5.9 },
+			"sk2":  { "pos": "wr", "depth": 2, "x": -1.5, "y": -6.5 },
+			"sk3":  { "pos": "te", "depth": 1, "x": 0.0, "y": -6.7 },
+			"sk4":  { "pos": "hb", "depth": 1, "x": 1.4, "y": -5.9 },
+			"sk5":  { "pos": "hb", "depth": 2, "x": 2.8, "y": -5.2 }
+		}
+	},
+	"defense": {
+		"alignment": {
+			"dl1": { "pos": "re", "depth": 1, "x": -2.5, "y": 1.0 },
+			"dl2": { "pos": "dt", "depth": 1, "x": -1.0, "y": 1.0 },
+			"dl3": { "pos": "dt", "depth": 2, "x": 1.0, "y": 1.0 },
+			"dl4": { "pos": "le", "depth": 1, "x": 2.5, "y": 1.0 },
+			"lb1": { "pos": "rolb", "depth": 1, "x": -1.7, "y": 2.6 },
+			"lb2": { "pos": "mlb",  "depth": 1, "x":  0.1, "y": 2.45 },
+			"lb3": { "pos": "lolb", "depth": 1, "x":  1.8, "y": 2.65 },
+			"db1": { "pos": "cb",   "depth": 1, "x": -3.5, "y": 3.6 },
+			"db2": { "pos": "ss",   "depth": 1, "x": -1.7, "y": 4.1 },
+			"db3": { "pos": "fs",   "depth": 1, "x":  1.7, "y": 4.1 },
+			"db4": { "pos": "cb",   "depth": 2, "x":  3.4, "y": 3.25 }
+		}
+	}
+}

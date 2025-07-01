@@ -1,0 +1,9 @@
+code,location,name,conference,division,color,number_color,offense_playbook,defense_playbook
+chi,Chicago,Grizzlies,West,,#0B162A,#FFFFFF,stock balanced,stock 4-3
+dal,Dallas,Lone Stars,West,,#003594,#FFFFFF,stock balanced,stock 4-3
+wis,Wisconsin,Lumberjacks,West,,#203731,#FFFFFF,stock balanced,stock 4-3
+mia,Miami,Cyclones,East,,#008E97,#FFFFFF,stock balanced,stock 4-3
+bos,Boston,Minutemen,East,,#002244,#FFFFFF,stock balanced,stock 4-3
+nye,New York,Empire,East,,#0B2265,#FFFFFF,stock balanced,stock 4-3
+phi,Philadelphia,Founders,East,,#004C54,#FFFFFF,stock balanced,stock 4-3
+lao,Los Angeles,Outlaws,West,,#003594,#FFFFFF,stock balanced,stock 4-3

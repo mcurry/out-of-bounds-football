@@ -1,0 +1,148 @@
+{
+  "name": "Kick",
+  "version": "1.0",
+  "packages": 
+  {
+    "kickoff": 
+    {
+      "name": "Kickoff",
+      "type": "kickoff",
+      "formations": 
+      {
+        "default": 
+        {
+          "name": "default",
+          "alignment": 
+          {
+            "kos1": { "pos": "kos", "depth": 1, "x": -3.5, "y": -3.8 },
+            "cb3": { "pos": "cb", "depth": 3, "x": -24.5, "y": -6 },
+            "cb2": { "pos": "cb", "depth": 2, "x": -19.25, "y": -6.25 },
+            "lolb2": { "pos": "lolb", "depth": 2, "x": -14, "y": -6.5 },
+            "ss2": { "pos": "ss", "depth": 2, "x": -8.75, "y": -6.75 },
+            "mlb2": { "pos": "mlb", "depth": 2, "x": -6, "y": -7 },
+            "rolb2": { "pos": "rolb", "depth": 2, "x": 3.5, "y": -7 },
+            "ss3": { "pos": "ss", "depth": 3, "x": 8.75, "y": -6.75 },
+            "fs2": { "pos": "fs", "depth": 2, "x": 14, "y": -6.5 },
+            "wr4": { "pos": "wr", "depth": 4, "x": 19.25, "y": -6.25 },
+            "cb4": { "pos": "cb", "depth": 4, "x": 24.5, "y": -6 },
+          },
+          "plays": 
+          {
+            "kickoff": 
+            {
+              "name": "Kickoff",
+              "actions": 
+              {
+                "kos1": [ { "type": "kickoff" }, { "type": "move", "params": {"distance": 9, "direction": 90, "speed": 25} } ],
+                "cb3": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "cb2": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "lolb2": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "ss2": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "mlb2": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "rolb2": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "ss3": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "fs2": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "wr4": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+                "cb4": [ { "type": "move", "params": {"distance": 10, "direction": 90, "speed": 100} } ],
+              },
+            }
+          }
+        }
+      }
+    },
+    "punt": 
+    {
+      "name": "Punt",
+      "type": "punt",
+      "formations": 
+      {
+        "default": 
+        {
+          "name": "default",
+          "alignment": 
+          {
+            "p1": { "pos": "p", "depth": 1, "x": 0, "y": -15 },
+            "fb1": { "pos": "fb", "depth": 1, "x": 3, "y": -6 },
+            "lolb1": { "pos": "lolb", "depth": 1, "x": -4, "y": -2 },
+            "cb4": { "pos": "cb", "depth": 4, "x": -16, "y": -0.8 },
+            "cb3": { "pos": "cb", "depth": 3, "x": 16, "y": -0.8 },
+            "rolb2": { "pos": "rolb", "depth": 2, "x": 4, "y": -2 },
+            "le2": { "pos": "le", "depth": 2, "x": -2.65, "y": -1.2 },
+            "mlb3": { "pos": "mlb", "depth": 3, "x": -1.35, "y": -0.9 },
+            "ls1": { "pos": "ls", "depth": 1, "x": 0, "y": -0.6 },
+            "mlb2": { "pos": "mlb", "depth": 2, "x": 1.35, "y": -0.9 },
+            "re2": { "pos": "re", "depth": 2, "x": 2.65, "y": -1.2 },
+          },
+          "plays": 
+          {
+            "punt": 
+            {
+              "name": "Punt",
+              "actions": 
+              {
+                "p1": [ { "type": "punt" } ],
+                "fb1": [ { "type": "pass_block", "params": {"time": 0} } ],
+                "lolb1": [ { "type": "pass_block", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 15, "direction": 90, "speed": 100} } ],
+                "cb4": [ { "type": "move", "params": {"distance": 13, "direction": 90, "speed": 100} } ],
+                "cb3": [ { "type": "move", "params": {"distance": 13, "direction": 90, "speed": 100} } ],
+                "rolb2": [ { "type": "pass_block", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 15, "direction": 90, "speed": 100} } ],
+                "le2": [ { "type": "pass_block", "params": {"time": 3} }, { "type": "move", "params": {"distance": 7.5, "direction": 90, "speed": 100} } ],
+                "mlb3": [ { "type": "pass_block", "params": {"time": 3} }, { "type": "move", "params": {"distance": 7.5, "direction": 90, "speed": 100} } ],
+                "ls1": [ { "type": "pass_block", "params": {"time": 3} }, { "type": "move", "params": {"distance": 7.5, "direction": 90, "speed": 100} } ],
+                "mlb2": [ { "type": "pass_block", "params": {"time": 3} }, { "type": "move", "params": {"distance": 7.5, "direction": 90, "speed": 100} } ],
+                "re2": [ { "type": "pass_block", "params": {"time": 3} }, { "type": "move", "params": {"distance": 7.5, "direction": 90, "speed": 100} } ],
+              },
+            }
+          }
+        }
+      }
+    },
+    "field goal": 
+    {
+      "name": "Field Goal",
+      "type": "field goal",
+      "formations": 
+      {
+        "default": 
+        {
+          "name": "default",
+          "alignment": 
+          {
+            "k1": { "pos": "k", "depth": 1, "x": -2, "y": -10 },
+            "qb2": { "pos": "qb", "depth": 1, "x": 1, "y": -8 },
+            "lolb1": { "pos": "lolb", "depth": 1, "x": -4, "y": -2 },
+            "cb4": { "pos": "cb", "depth": 4, "x": -5, "y": -2.8 },
+            "cb3": { "pos": "cb", "depth": 3, "x": 5, "y": -2.8 },
+            "rolb2": { "pos": "rolb", "depth": 2, "x": 4, "y": -2 },
+            "le2": { "pos": "le", "depth": 2, "x": -2.65, "y": -1.2 },
+            "mlb3": { "pos": "mlb", "depth": 3, "x": -1.35, "y": -0.9 },
+            "ls1": { "pos": "ls", "depth": 1, "x": 0, "y": -0.6 },
+            "mlb2": { "pos": "mlb", "depth": 2, "x": 1.35, "y": -0.9 },
+            "re2": { "pos": "re", "depth": 2, "x": 2.65, "y": -1.2 },
+          },
+          "plays": 
+          {
+            "field goal": 
+            {
+              "name": "Field Goal",
+              "actions": 
+              {
+                "k1": [ { "type": "field_goal" } ],
+                "qb2": [ { "type": "hold", "params": {"time": 3.0} } ],
+                "lolb1": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "cb4": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "cb3": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "rolb2": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "le2": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "mlb3": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "ls1": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "mlb2": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+                "re2": [ { "type": "pass_block", "params": {"time": 0.0} } ],
+              },
+            }
+          }
+        }
+      }
+    }
+  }
+}

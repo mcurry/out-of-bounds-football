@@ -1,0 +1,926 @@
+{
+  "name": "stock 4-3",
+  "version": "1.0",
+  "packages": {
+    "4-3": {
+      "name": "4-3",
+      "type": "defense",
+      "formations": {
+        "normal": {
+          "name": "Normal",
+          "alignment": {
+            "re1": {"pos": "re", "depth": 1, "x": -4, "y": 1.63},
+            "dt2": {"pos": "dt", "depth": 2, "x": -0.5, "y": 1.63},
+            "dt1": {"pos": "dt", "depth": 1, "x": 1.85, "y": 1.63},
+            "le1": {"pos": "le", "depth": 1, "x": 4, "y": 1.63},
+            "rolb1": {"pos": "rolb", "depth": 1, "x": -3.17, "y": 4},
+            "mlb1": {"pos": "mlb", "depth": 1, "x": 0.83, "y": 4.9},
+            "lolb1": {"pos": "lolb", "depth": 1, "x": 4.83, "y": 4},
+            "cb2": {"pos": "cb", "depth": 2, "x": -15, "y": 3.66},
+            "fs1": {"pos": "fs", "depth": 1, "x": -4.25, "y": 11},
+            "ss1": {"pos": "ss", "depth": 1, "x": 7, "y": 9.5},
+            "cb1": {"pos": "cb", "depth": 1, "x": 15, "y": 3.66}
+          },
+          "plays": {
+            "cover 1": {
+              "name": "Cover 1",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "lolb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "dbl te bracket": {
+              "name": "DBL TE Bracket",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 239}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "rolb1": [{"type": "delay", "params": {"time": 0.5}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 270}}, {"type": "tackle"}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "lolb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "cover 2": {
+              "name": "Cover 2",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "move", "params": {"distance": 0.88, "direction": 25, "speed": 100}}, {"type": "tackle"}],
+                "dt1": [{"type": "move", "params": {"distance": 4, "direction": 200, "speed": 100}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "hook_zone", "params": {"receiver": 4, "direction": 143}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 30}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 28}}],
+                "cb2": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}]
+              }
+            },
+            "olb fire man": {
+              "name": "OLB Fire Man",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 239}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 278}}, {"type": "tackle"}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 259}}, {"type": "tackle"}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "man qb spy": {
+              "name": "Man QB Spy",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 247}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 239}}, {"type": "tackle"}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "lolb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "2 man under": {
+              "name": "2 Man Under",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "lolb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "zip shoot gut": {
+              "name": "Zip Shoot Gut",
+              "actions": {
+                "re1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 135}}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "le1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 124}}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 270}}, {"type": "tackle"}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 278}}, {"type": "tackle"}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "curl_to_flat_zone", "params": {"receiver": 2, "area": "mid_right"}}],
+                "cb2": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "buzz duo": {
+              "name": "Buzz Duo",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 284}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "rolb1": [{"type": "curl_to_flat_zone", "params": {"receiver": 4, "area": "mid_left"}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "hook_zone", "params": {"receiver": 4, "direction": 118}}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "curl_to_flat_zone", "params": {"receiver": 3, "area": "mid_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 79}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "ss snake 3 stay": {
+              "name": "SS Snake 3 Stay",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 247}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "rolb1": [{"type": "curl_to_flat_zone", "params": {"receiver": 4, "area": "mid_left"}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "lolb1": [{"type": "curl_to_flat_zone", "params": {"receiver": 1, "area": "mid_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "show_blitz", "params": {"percent": 65}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 253}}, {"type": "tackle"}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "flat thirds": {
+              "name": "Flat Thirds",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 239}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 239}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 228}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 239}}, {"type": "tackle"}],
+                "rolb1": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}],
+                "cb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}]
+              }
+            },
+            "storm blitz": {
+              "name": "Storm Blitz",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "rolb1": [{"type": "rush_passer", "params": {"distance": 3, "direction": 349}}, {"type": "tackle"}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 5}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 157}}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 30}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 28}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 228}}, {"type": "tackle"}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "safety blitz": {
+              "name": "Safety Blitz",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "lolb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 270}}, {"type": "tackle"}],
+                "ss1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 228}}, {"type": "tackle"}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "lb contain": {
+              "name": "LB Contain",
+              "actions": {
+                "re1": [{"type": "flat_zone", "params": {"receiver": 4, "area": "flat_left"}}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "rolb1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 219}}, {"type": "tackle"}],
+                "mlb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "lolb1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 349}}, {"type": "tackle"}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_4_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_4_left_middle"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_4_right_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_4_right"}}]
+              }
+            },
+            "cover 3": {
+              "name": "Cover 3",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "rolb1": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 45}}],
+                "lolb1": [{"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 247}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "engage eight": {
+              "name": "Engage Eight",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 65}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 278}}, {"type": "tackle"}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 270}}, {"type": "tackle"}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 65}}, {"type": "rush_passer", "params": {"distance": 5, "direction": 270}}, {"type": "tackle"}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 247}}, {"type": "tackle"}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            }
+          }
+        }
+      }
+    },
+    "nickel": {
+      "name": "Nickel",
+      "type": "defense",
+      "formations": {
+        "normal": {
+          "name": "Normal",
+          "alignment": {
+            "re1": {"pos": "re", "depth": 1, "x": -4, "y": 1.63},
+            "dt2": {"pos": "dt", "depth": 2, "x": -0.5, "y": 1.63},
+            "dt1": {"pos": "dt", "depth": 1, "x": 1.85, "y": 1.63},
+            "le1": {"pos": "le", "depth": 1, "x": 4, "y": 1.63},
+            "cb3": {"pos": "cb", "depth": 3, "x": -9, "y": 4},
+            "rolb1": {"pos": "rolb", "depth": 1, "x": -3, "y": 3.66},
+            "mlb1": {"pos": "mlb", "depth": 1, "x": 3.5, "y": 3.66},
+            "cb2": {"pos": "cb", "depth": 2, "x": -15, "y": 3.66},
+            "fs1": {"pos": "fs", "depth": 1, "x": -6, "y": 13},
+            "ss1": {"pos": "ss", "depth": 1, "x": 6, "y": 13},
+            "cb1": {"pos": "cb", "depth": 1, "x": 15, "y": 3.66}
+          },
+          "plays": {
+            "cover 1 ": {
+              "name": "Cover 1 ",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 79}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "cover 2": {
+              "name": "Cover 2",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "cb3": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 124}}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 79}}],
+                "mlb1": [{"type": "hook_zone", "params": {"receiver": 2, "direction": 20}}],
+                "cb2": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}]
+              }
+            },
+            "cover 3": {
+              "name": "Cover 3",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "move", "params": {"distance": 0.88, "direction": 25, "speed": 100}}, {"type": "tackle"}],
+                "dt1": [{"type": "move", "params": {"distance": 4, "direction": 200, "speed": 100}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 284}}, {"type": "tackle"}],
+                "cb3": [{"type": "flat_zone", "params": {"receiver": 4, "area": "flat_left"}}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 135}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 278}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "2 man under": {
+              "name": "2 Man Under",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "quarters safe": {
+              "name": "Quarters Safe",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 253}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "cb3": [{"type": "curl_to_flat_zone", "params": {"receiver": 4, "area": "mid_left"}}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 79}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "curl_to_flat_zone", "params": {"receiver": 3, "area": "mid_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_4_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_4_left_middle"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_4_right_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_4_right"}}]
+              }
+            },
+            "man - qb spy": {
+              "name": "Man - QB Spy",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "rolb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "lcb3 blitz": {
+              "name": "LCB3 Blitz",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "cb3": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "rush_passer", "params": {"distance": 6, "direction": 290}}, {"type": "tackle"}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "lrolb1 blitz": {
+              "name": "LROLB1 Blitz",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 278}}, {"type": "tackle"}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "de contain ": {
+              "name": "DE Contain ",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 188}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 349}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "rolb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "qb contain": {
+              "name": "QB Contain",
+              "actions": {
+                "re1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 4, "direction": 112}}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 65}}],
+                "cb3": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "mlb1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 349}}, {"type": "tackle"}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            }
+          }
+        }
+      }
+    },
+    "dime": {
+      "name": "Dime",
+      "type": "defense",
+      "formations": {
+        "normal": {
+          "name": "Normal",
+          "alignment": {
+            "re1": {"pos": "re", "depth": 1, "x": -4, "y": 1.63},
+            "dt2": {"pos": "dt", "depth": 2, "x": -0.5, "y": 1.63},
+            "dt1": {"pos": "dt", "depth": 1, "x": 1.85, "y": 1.63},
+            "le1": {"pos": "le", "depth": 1, "x": 4, "y": 1.63},
+            "cb3": {"pos": "cb", "depth": 3, "x": -9, "y": 4},
+            "mlb1": {"pos": "mlb", "depth": 1, "x": 0, "y": 3.66},
+            "cb4": {"pos": "cb", "depth": 4, "x": 9, "y": 4},
+            "cb2": {"pos": "cb", "depth": 2, "x": -15.5, "y": 3.66},
+            "fs1": {"pos": "fs", "depth": 1, "x": -4.62, "y": 13},
+            "ss1": {"pos": "ss", "depth": 1, "x": 4.63, "y": 13},
+            "cb1": {"pos": "cb", "depth": 1, "x": 15.5, "y": 3.66}
+          },
+          "plays": {
+            "cover 1": {
+              "name": "Cover 1",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "cover 2 pinch": {
+              "name": "Cover 2 Pinch",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "cb3": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 4, "direction": 112}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "cb4": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 65}}],
+                "cb2": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}]
+              }
+            },
+            "cover 3": {
+              "name": "Cover 3",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 298}}, {"type": "tackle"}],
+                "cb3": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 5}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 157}}],
+                "cb4": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 278}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "2 man under": {
+              "name": "2 Man Under",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "quarters spy": {
+              "name": "Quarters Spy",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 298}}, {"type": "tackle"}],
+                "cb3": [{"type": "curl_to_flat_zone", "params": {"receiver": 4, "area": "mid_left"}}],
+                "mlb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "cb4": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "curl_to_flat_zone", "params": {"receiver": 2, "area": "mid_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_4_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_4_left_middle"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_4_right_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_4_right"}}]
+              }
+            },
+            "lmlb1 blitz": {
+              "name": "LMLB1 Blitz",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 253}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 298}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "rush_passer", "params": {"distance": 2.5, "direction": 323}}, {"type": "tackle"}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "db blitz": {
+              "name": "DB Blitz",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 233}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb4": [{"type": "rush_passer", "params": {"distance": 6, "direction": 239}}, {"type": "tackle"}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "ss gut blitz": {
+              "name": "SS Gut Blitz",
+              "actions": {
+                "re1": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 233}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 298}}, {"type": "tackle"}],
+                "le1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "delay", "params": {"time": 0.5}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 270}}, {"type": "tackle"}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "man_coverage", "params": {"receiver": 3}}],
+                "ss1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 247}}, {"type": "tackle"}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "de contain": {
+              "name": "DE Contain",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 188}}, {"type": "tackle"}],
+                "dt2": [{"type": "move", "params": {"distance": 0.88, "direction": 25, "speed": 100}}, {"type": "tackle"}],
+                "dt1": [{"type": "move", "params": {"distance": 4, "direction": 200, "speed": 100}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 349}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "db contain": {
+              "name": "DB Contain",
+              "actions": {
+                "re1": [{"type": "flat_zone", "params": {"receiver": 4, "area": "flat_left"}}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "cb3": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "mlb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "cb4": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_4_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_4_left_middle"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_4_right_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_4_right"}}]
+              }
+            }
+          }
+        }
+      }
+    },
+    "quarter": {
+      "name": "Quarter",
+      "type": "defense",
+      "formations": {
+        "normal": {
+          "name": "Normal",
+          "alignment": {
+            "re1": {"pos": "re", "depth": 1, "x": -4, "y": 1.63},
+            "fs2": {"pos": "fs", "depth": 2, "x": 6, "y": 4},
+            "dt1": {"pos": "dt", "depth": 1, "x": 0, "y": 1.73},
+            "le1": {"pos": "le", "depth": 1, "x": 4, "y": 1.63},
+            "cb3": {"pos": "cb", "depth": 3, "x": -9, "y": 4},
+            "mlb1": {"pos": "mlb", "depth": 1, "x": 0, "y": 3.66},
+            "cb4": {"pos": "cb", "depth": 4, "x": 9, "y": 4},
+            "cb2": {"pos": "cb", "depth": 2, "x": -15.5, "y": 3.66},
+            "fs1": {"pos": "fs", "depth": 1, "x": -5.5, "y": 11},
+            "ss1": {"pos": "ss", "depth": 1, "x": 5.5, "y": 11},
+            "cb1": {"pos": "cb", "depth": 1, "x": 15.5, "y": 3.66}
+          },
+          "plays": {
+            "cover 1 ": {
+              "name": "Cover 1 ",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "fs2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "cover 2 ": {
+              "name": "Cover 2 ",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "fs2": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 90}}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "cb3": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 4, "direction": 98}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 15}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 124}}],
+                "cb4": [{"type": "show_blitz", "params": {"percent": 30}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 28}}],
+                "cb2": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}]
+              }
+            },
+            "cover 3": {
+              "name": "Cover 3",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "fs2": [{"type": "show_blitz", "params": {"percent": 30}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 28}}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "cb3": [{"type": "flat_zone", "params": {"receiver": 4, "area": "flat_left"}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "cb4": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 225}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "2 man under spy": {
+              "name": "2 Man Under Spy",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "fs2": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "double x lb spy": {
+              "name": "Double X LB Spy",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "fs2": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "qb_spy", "params": {"distance": 5}}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "zone blitz": {
+              "name": "Zone Blitz",
+              "actions": {
+                "re1": [{"type": "show_blitz", "params": {"percent": 10}}, {"type": "hook_zone", "params": {"receiver": 4, "direction": 138}}],
+                "fs2": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 98}}],
+                "cb3": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 278}}, {"type": "tackle"}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 2, "direction": 253}}, {"type": "rush_passer", "params": {"distance": 5, "direction": 270}}, {"type": "tackle"}],
+                "cb4": [{"type": "show_blitz", "params": {"percent": 20}}, {"type": "hook_zone", "params": {"receiver": 2, "direction": 79}}],
+                "cb2": [{"type": "flat_zone", "params": {"receiver": 5, "area": "flat_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_2_left"}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_2_right"}}],
+                "cb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}]
+              }
+            },
+            "fire blitz": {
+              "name": "Fire Blitz",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "fs2": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 245}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "tackle"}],
+                "cb3": [{"type": "show_blitz", "params": {"percent": 65}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 278}}, {"type": "tackle"}],
+                "mlb1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 228}}, {"type": "tackle"}],
+                "cb4": [{"type": "show_blitz", "params": {"percent": 65}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 259}}, {"type": "tackle"}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "show_blitz", "params": {"percent": 65}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 259}}, {"type": "tackle"}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "qb contain ": {
+              "name": "QB Contain ",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "fs2": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 253}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "cb3": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "cb4": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "1 robber fs lurk": {
+              "name": "1 Robber FS Lurk",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "fs2": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 298}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 180}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "hook_zone", "params": {"receiver": 2, "direction": 298}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "ram buck 1": {
+              "name": "Ram Buck 1",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "fs2": [{"type": "delay", "params": {"time": 0.25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 200}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "cb3": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "mlb1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 259}}, {"type": "tackle"}],
+                "cb4": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "fs1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            }
+          }
+        }
+      }
+    },
+    "goal line": {
+      "name": "Goal Line",
+      "type": "defense",
+      "formations": {
+        "new goal line": {
+          "name": "New Goal Line",
+          "alignment": {
+            "re1": {"pos": "re", "depth": 1, "x": -3, "y": 1.63},
+            "dt2": {"pos": "dt", "depth": 2, "x": -1.6, "y": 1.63},
+            "dt1": {"pos": "dt", "depth": 1, "x": 0, "y": 1.63},
+            "le1": {"pos": "le", "depth": 1, "x": 1.6, "y": 1.63},
+            "le2": {"pos": "le", "depth": 2, "x": 3, "y": 1.63},
+            "rolb1": {"pos": "rolb", "depth": 1, "x": -4.8, "y": 1.63},
+            "lolb1": {"pos": "lolb", "depth": 1, "x": 4.8, "y": 1.63},
+            "cb2": {"pos": "cb", "depth": 2, "x": -15.5, "y": 2},
+            "mlb1": {"pos": "mlb", "depth": 1, "x": 1.6, "y": 4},
+            "ss1": {"pos": "ss", "depth": 1, "x": -1.6, "y": 4},
+            "cb1": {"pos": "cb", "depth": 1, "x": 15.5, "y": 2}
+          },
+          "plays": {
+            "jam cover 1": {
+              "name": "Jam Cover 1",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 290}}, {"type": "tackle"}],
+                "rolb1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "lolb1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "flat buzz": {
+              "name": "Flat Buzz",
+              "actions": {
+                "re1": [{"type": "curl_to_flat_zone", "params": {"receiver": 5, "area": "mid_left"}}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le2": [{"type": "curl_to_flat_zone", "params": {"receiver": 1, "area": "mid_right"}}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 0}}, {"type": "rush_passer", "params": {"distance": 6, "direction": 290}}, {"type": "tackle"}],
+                "lolb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 3, "direction": 247}}, {"type": "tackle"}],
+                "cb2": [{"type": "deep_zone", "params": {"area": "cover_3_left"}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 50}}, {"type": "hook_zone", "params": {"receiver": 3, "direction": 90}}],
+                "ss1": [{"type": "deep_zone", "params": {"area": "cover_3_middle"}}],
+                "cb1": [{"type": "deep_zone", "params": {"area": "cover_3_right"}}]
+              }
+            },
+            "flat slide": {
+              "name": "Flat Slide",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "rolb1": [{"type": "flat_zone", "params": {"receiver": 4, "area": "flat_left"}}],
+                "lolb1": [{"type": "flat_zone", "params": {"receiver": 1, "area": "flat_right"}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "mlb1": [{"type": "man_coverage", "params": {"receiver": 4}}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "blitz a": {
+              "name": "Blitz A",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 278}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 259}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 2, "direction": 270}}, {"type": "tackle"}],
+                "le2": [{"type": "rush_passer", "params": {"distance": 2, "direction": 284}}, {"type": "tackle"}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 65}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 270}}, {"type": "tackle"}],
+                "lolb1": [{"type": "man_coverage", "params": {"receiver": 3}}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "mlb1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 228}}, {"type": "tackle"}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            },
+            "blitz c": {
+              "name": "Blitz C",
+              "actions": {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "le2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "rolb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 270}}, {"type": "tackle"}],
+                "lolb1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 259}}, {"type": "tackle"}],
+                "cb2": [{"type": "man_coverage", "params": {"receiver": 5}}],
+                "mlb1": [{"type": "show_blitz", "params": {"percent": 25}}, {"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 270}}, {"type": "tackle"}],
+                "ss1": [{"type": "man_coverage", "params": {"receiver": 2}}],
+                "cb1": [{"type": "man_coverage", "params": {"receiver": 1}}]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

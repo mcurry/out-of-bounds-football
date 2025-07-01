@@ -1,0 +1,148 @@
+{
+  "name": "Return",
+  "version": "1.0",
+  "packages": 
+  {
+    "kick return": 
+    {
+      "name": "Kick Return",
+      "type": "kick return",
+      "formations": 
+      {
+        "default": 
+        {
+          "name": "default",
+          "alignment": 
+          {
+            "kr1": { "pos": "kr", "depth": 1, "x": 0, "y": 65 },
+            "kr2": { "pos": "kr", "depth": 2, "x": 0, "y": 55 },
+            "fb2": { "pos": "fb", "depth": 2, "x": 6, "y": 40 },
+            "te3": { "pos": "te", "depth": 3, "x": -6, "y": 40 },
+            "fb1": { "pos": "fb", "depth": 1, "x": 14, "y": 38 },
+            "te2": { "pos": "te", "depth": 2, "x": -14, "y": 38 },
+            "cb3": { "pos": "cb", "depth": 3, "x": 20, "y": 15 },
+            "lolb2": { "pos": "lolb", "depth": 2, "x": 10, "y": 15 },
+            "mlb2": { "pos": "mlb", "depth": 2, "x": 0, "y": 15 },
+            "rolb2": { "pos": "rolb", "depth": 2, "x": -10, "y": 15 },
+            "ss2": { "pos": "ss", "depth": 2, "x": -20, "y": 15 },
+          },
+          "plays": 
+          {
+            "return": 
+            {
+              "name": "Return",
+              "actions": 
+              {
+                "kr1": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "return_block", "params": {"time": 0} } ],
+                "kr2": [ { "type": "delay", "params": {"time": 2} }, { "type": "move", "params": {"distance": 7, "direction": 90, "speed": 65} }, { "type": "return_block", "params": {"time": 0} } ],
+                "fb2": [ { "type": "delay", "params": {"time": 2} }, { "type": "move", "params": {"distance": 12, "direction": 112, "speed": 65} }, { "type": "return_block", "params": {"time": 0} } ],
+                "te3": [ { "type": "delay", "params": {"time": 2} }, { "type": "move", "params": {"distance": 12, "direction": 70, "speed": 65} }, { "type": "return_block", "params": {"time": 0} } ],
+                "fb1": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 17, "direction": 118, "speed": 65} }, { "type": "return_block", "params": {"time": 0} } ],
+                "te2": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 17, "direction": 59, "speed": 65} }, { "type": "return_block", "params": {"time": 0} } ],
+                "cb3": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 20, "direction": 112, "speed": 100} }, { "type": "return_block", "params": {"time": 0} } ],
+                "lolb2": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 20, "direction": 104, "speed": 100} }, { "type": "return_block", "params": {"time": 0} } ],
+                "mlb2": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 20, "direction": 90, "speed": 100} }, { "type": "return_block", "params": {"time": 0} } ],
+                "rolb2": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 20, "direction": 73, "speed": 100} }, { "type": "return_block", "params": {"time": 0} } ],
+                "ss2": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "move", "params": {"distance": 20, "direction": 65, "speed": 100} }, { "type": "return_block", "params": {"time": 0} } ],
+              },
+            }
+          }
+        }
+      }
+    },
+    "punt return": 
+    {
+      "name": "Punt Return",
+      "type": "punt return",
+      "formations": 
+      {
+        "default": 
+        {
+          "name": "default",
+          "alignment": 
+          {
+            "rolb2": { "pos": "rolb", "depth": 2, "x": -2.2, "y": 1.63 },
+            "mlb2": { "pos": "mlb", "depth": 2, "x": -0.7, "y": 1.63 },
+            "mlb3": { "pos": "mlb", "depth": 3, "x": 0.7, "y": 1.63 },
+            "lolb2": { "pos": "lolb", "depth": 2, "x": 2.2, "y": 1.63 },
+            "rolb1": { "pos": "rolb", "depth": 1, "x": -3.7, "y": 1.63 },
+            "ss2": { "pos": "ss", "depth": 2, "x": 3.7, "y": 1.63 },
+            "fs2": { "pos": "fs", "depth": 2, "x": 5.2, "y": 1.63 },
+            "cb3": { "pos": "cb", "depth": 3, "x": -6.8, "y": 1.63 },
+            "fs1": { "pos": "fs", "depth": 1, "x": -5.2, "y": 1.63 },
+            "cb2": { "pos": "cb", "depth": 2, "x": 6.8, "y": 1.63 },
+            "pr1": { "pos": "pr", "depth": 1, "x": 0, "y": 45 },
+          },
+          "plays": 
+          {
+            "punt return": 
+            {
+              "name": "Punt Return",
+              "actions": 
+              {
+                "rolb2": [ { "type": "rush_passer", "params": {"distance": 2.0, "direction": 278.0} }, { "type": "tackle" } ],
+                "mlb2": [ { "type": "rush_passer", "params": {"distance": 1.0, "direction": 273.0} }, { "type": "tackle" } ],
+                "mlb3": [ { "type": "rush_passer", "params": {"distance": 1.0, "direction": 273.0} }, { "type": "tackle" } ],
+                "lolb2": [ { "type": "rush_passer", "params": {"distance": 2.0, "direction": 259.0} }, { "type": "tackle" } ],
+                "rolb1": [ { "type": "hook_zone", "params": {"receiver": 4, "direction": 90.0} }, { "type": "tackle" } ],
+                "ss2": [ { "type": "hook_zone", "params": {"receiver": 2, "direction": 90.0} }, { "type": "tackle" } ],
+                "fs2": [ { "type": "man_coverage", "params": {"receiver": 1} } ],
+                "cb3": [ { "type": "man_coverage", "params": {"receiver": 5} } ],
+                "fs1": [ { "type": "man_coverage", "params": {"receiver": 5} } ],
+                "cb2": [ { "type": "man_coverage", "params": {"receiver": 1} } ],
+                "pr1": [ { "type": "delay", "params": {"time": 1.5} }, { "type": "return_block", "params": {"time": 0.0} } ],
+              }
+            }
+          }
+        }
+      }
+    },
+    "field goal block": 
+    {
+      "name": "Field Goal Block",
+      "type": "field goal block",
+      "formations": 
+      {
+        "default": 
+        {
+          "name": "default",
+          "alignment": 
+          {
+            "re1": {"pos": "re", "depth": 1, "x": -3, "y": 1.63},
+            "dt2": {"pos": "dt", "depth": 2, "x": -1.6, "y": 1.63},
+            "dt1": {"pos": "dt", "depth": 1, "x": 0, "y": 1.63},
+            "le1": {"pos": "le", "depth": 1, "x": 1.6, "y": 1.63},
+            "le2": {"pos": "le", "depth": 2, "x": 3, "y": 1.63},
+            "rolb1": {"pos": "rolb", "depth": 1, "x": -4.8, "y": 1.63},
+            "lolb1": {"pos": "lolb", "depth": 1, "x": 4.8, "y": 1.63},
+            "cb2": {"pos": "cb", "depth": 2, "x": -5.5, "y": 2},
+            "mlb1": {"pos": "mlb", "depth": 1, "x": 1.6, "y": 4},
+            "ss1": {"pos": "ss", "depth": 1, "x": -1.6, "y": 4},
+            "cb1": {"pos": "cb", "depth": 1, "x": 5.5, "y": 2}
+          },
+          "plays": 
+          {
+            "field goal block": 
+            {
+              "name": "Field Goal Block",
+              "actions": 
+              {
+                "re1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 284}}, {"type": "tackle"}],
+                "dt1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 273}}, {"type": "tackle"}],
+                "le1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "le2": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "tackle"}],
+                "rolb1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 247}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 270}}, {"type": "tackle"}],
+                "lolb1": [{"type": "rush_passer", "params": {"distance": 4, "direction": 259}}, {"type": "tackle"}],
+                "cb2": [{"type": "tackle"}],
+                "mlb1": [{"type": "rush_passer", "params": {"distance": 1, "direction": 290}}, {"type": "rush_passer", "params": {"distance": 4, "direction": 270}}, {"type": "tackle"}],
+                "ss1": [{"type": "tackle"}],
+                "cb1": [{"type": "tackle"}],
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
