@@ -8,6 +8,13 @@ import zipfile
 import urllib.parse
 import sys
 
+#Start of season
+#DEFAULT_ITERATION = "1-base"
+
+#current
+DEFAULT_ITERATION = "6-week-5"
+
+
 # Optional: pretty progress bars if installed (pip install tqdm)
 try:
     from tqdm import tqdm
@@ -39,8 +46,11 @@ company = input("1) What are the initials for the company you want to get roster
 coach = input("2) Who is the coach the game is named after? (6 letters) ").strip().lower()
 league = input("3) What are the 3 initials for the league you want the rosters from? (3 letters) ").strip().lower()
 
-# Ask about avatars (default N)
-include_avatars_in = input("4) Include player avatars (this takes much longer)? (Y/N) [N]: ").strip().lower()
+# Ask about avatars (default DEFAULT_ITERATION)
+iteration = input(f"4) What version of the ratings do you want? [{DEFAULT_ITERATION}]: ").strip().lower() or DEFAULT_ITERATION
+
+# Ask about version (default N)
+include_avatars_in = input("5) Include player avatars (this takes much longer)? (Y/N) [N]: ").strip().lower()
 include_avatars = include_avatars_in in ("y", "yes")
 
 # Construct the base URL
@@ -55,6 +65,8 @@ headers = {
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-site",
     "Sec-Fetch-Dest": "empty",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
     "x-feature": '{"enable_next_ratings_release":true,"enable_college_football_ratings":true}'
 }
 
@@ -80,12 +92,15 @@ if include_avatars:
     os.makedirs("avatars", exist_ok=True)
 
 while True:
-    url = f"{base_url}?locale=en&limit={limit}&offset={offset}&iteration=1-base"
-    print(f"Fetching offset {offset} from {url}")
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
-        print(f"Error: {response.status_code}")
-        break
+    url = f"{base_url}?locale=en&limit={limit}&offset={offset}&iteration={iteration}"
+    try:
+        print(f"Fetching offset 0 from {url}")
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # raises HTTPError if not 200
+    except requests.exceptions.RequestException as e:
+        print("\n⚠️  Unable to fetch data from server.")
+        print(f"Reason: {e.__class__.__name__} - {e}")
+        sys.exit(1)
 
     data = response.json()
     items = data.get("items", [])
@@ -219,13 +234,17 @@ while True:
     print(f"Sleeping after batch {delay:.2f} seconds...")
     time.sleep(delay)
 
+if not all_items:
+    print("⚠️  No players were returned from the API. Exiting.")
+    sys.exit(1)
+
 # Save all items into one big JSON
 with open("players.json", "w") as f:
     json.dump({"items": all_items}, f, indent=2)
 
 # Save teams
 try:
-    df = pd.read_csv("teams.csv", dtype=str)
+    df = pd.read_csv("base_teams.csv", dtype=str)
 except FileNotFoundError:
     df = pd.DataFrame({
         "code": ["" for _ in range(32)],

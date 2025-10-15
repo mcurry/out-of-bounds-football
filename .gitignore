@@ -1,0 +1,6 @@
+#generated files
+leagues/import/*.zip
+leagues/import/players.json
+leagues/import/avatars
+leagues/import/logos
+leagues/import/teams.csv

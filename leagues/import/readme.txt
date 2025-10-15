@@ -5,6 +5,7 @@ This script downloads player ratings an external api and convert them to a forma
 ## Features
 - Reads ratings from a specified API.
 - Downloads team logos
+- Download player avatars
 
 ---
 
