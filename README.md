@@ -4,6 +4,9 @@
 
 An (American) football management sim for mobile. Think Sega’s Football Manager, but for football, not fútbol.
 
+> [!NOTE]  
+> This repository contains documentation and resources for customizing Out Of Bounds Football (leagues, playbooks, etc.). The game's source code is not public at this time.
+
 ![Main Menu Screenshot](screenshots/main_menu.png)
 
 ## Development
@@ -47,6 +50,7 @@ OOB Football is currently in very early access and available only for Android de
 - Built with [Godot Engine 4](https://godotengine.org/)
 - Some icons used in this project are from Google’s Material Icons collection ([link](https://fonts.google.com/icons)), licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 - This project uses SQLite, which is in the public domain. See [SQLite copyright](https://sqlite.org/copyright.html) for details.
+- Game data and play-by-play information provided by [nflfastR](https://nflfastr.com/).
 
 ## Contact
 

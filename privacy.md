@@ -1,11 +1,6 @@
----
-layout: default
-title: Privacy Policy
----
-
 # Privacy Policy
 
-_Last updated: July 1, 2025_
+*Last updated: July 1, 2025*
 
 Out of Bounds Football does not collect, store, or share any personal data or personal information from users.
 
@@ -27,4 +22,4 @@ If you have any questions or concerns about this privacy policy, please contact 
 
 ## Changes to This Policy
 
-We may update this privacy policy from time to time. Any changes will be posted on this page.
+We may update this privacy policy from time to time. Any changes will be posted on the website's privacy policy page.
